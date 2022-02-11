@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion rootProject.hasProperty('targetSdkVersion') ? rootProject.targetSdkVersion : DEFAULT_TARGET_SDK_VERSION
-        versionCode 1
-        versionName "1.0"
+        versionCode 10107
+        versionName "1.1.7"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -24,5 +24,5 @@ dependencies {
 
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
     implementation 'com.facebook.react:react-native:+'
-    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
 }
