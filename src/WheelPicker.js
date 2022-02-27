@@ -50,7 +50,8 @@ export default class WheelPicker extends React.Component<Props, State> {
   }
 
   componentDidMount() {
-    this.setState({ selectedItemPosition: this.props.selectedItemPosition })
+    // note, added timeout because it did not work with latest WheelPicker version without it...
+    setTimeout(()=>this.setState({ selectedItemPosition: this.props.selectedItemPosition }), 100);
   }
 
   componentWillReceiveProps(nextProps: Props) {
